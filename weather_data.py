@@ -1,5 +1,5 @@
 """
-HW4: Weather Forecast Web App – Data Fetching and Database Script
+Weather Forecast Web App – Data Fetching and Database Script
 Usage:
     python hw4.py fetch          # Fetch data and write to data.db
     python hw4.py regions        # List stored regions
