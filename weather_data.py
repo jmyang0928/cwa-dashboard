@@ -1,9 +1,9 @@
 """
 Weather Forecast Web App – Data Fetching and Database Script
 Usage:
-    python hw4.py fetch          # Fetch data and write to data.db
-    python hw4.py regions        # List stored regions
-    python hw4.py dump 北部地區   # Print all records for a specific region
+    python weather_data.py fetch          # Fetch data and write to data.db
+    python weather_data.py regions        # List stored regions
+    python weather_data.py dump 北部地區   # Print all records for a specific region
 """
 import os
 import sys
@@ -96,7 +96,7 @@ def main():
     elif sys.argv[1]=="dump":
         # Print all records for a specific region
         if len(sys.argv)<3:
-            print("Usage: python hw4.py dump <region_name>")
+            print("Usage: python weather_data.py dump <region_name>")
             sys.exit(1)
         for row in conn.execute("""
                 SELECT dataDate,mint,maxt FROM TemperatureForecasts
